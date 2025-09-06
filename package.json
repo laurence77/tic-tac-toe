@@ -13,6 +13,8 @@
   },
   "scripts": {
     "dev": "esbuild src/main.ts --bundle --outfile=public/bundle.js --servedir=public --sourcemap --watch",
-    "build": "esbuild src/main.ts --bundle --outfile=public/bundle.js --minify --sourcemap"
+    "dev:enhanced": "esbuild src/main-enhanced.ts --bundle --outfile=public/bundle.js --servedir=public --sourcemap --watch",
+    "build": "esbuild src/main.ts --bundle --outfile=public/bundle.js --minify --sourcemap",
+    "build:enhanced": "esbuild src/main-enhanced-clean.ts --bundle --outfile=public/bundle.js --minify --sourcemap"
   }
 }
